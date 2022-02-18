@@ -1,6 +1,6 @@
 from kafka import KafkaConsumer
 
-consumer = KafkaConsumer('my-topic',
+consumer = KafkaConsumer('quickstart-events',
                          group_id='my-group',
                          bootstrap_servers=['localhost:9092'])
 for message in consumer:
